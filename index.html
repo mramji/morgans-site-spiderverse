@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Spider-Man: Into the Spider-Verse</title>
+	<link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+	<img class="title" src="img/title.png" alt="">
+	<ul class="nav">
+		<li><a class="nav-link" href="#home">Home</a></li>
+		<li><a class="nav-link" href="#trailer">Trailer</a></li>
+		<li><a class="nav-link" href="#characters">Characters</a></li>
+	</ul>
+	<!-- <img class="web" src="img/web.png" alt=""> -->
+	<img class="animation" src="img/miles-swing.png" alt="">
+	
+	<div class="white">
+		
+		<div id="home" class="home">
+			<img class="home-img" src="img/all-characters-optimised.jpg" alt="">
+			<h1 class="home-header">Spider-Man: Into the Spider-Verse</h1>
+			<p class="synopsis">Bitten by a radioactive spider in the subway, Brooklyn teenager Miles Morales suddenly develops mysterious powers that transform him into the one and only Spider-Man. When he meets Peter Parker, he soon realizes that there are many others who share his special, high-flying talents. Miles must now use his newfound skills to battle the evil Kingpin, a hulking madman who can open portals to other universes and pull different versions of Spider-Man into our world.</p>
+		</div>
+		<div id="trailer">
+			<iframe  class="trailer" src="https://www.youtube.com/embed/g4Hbz2jLxvQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>	
+
+	<div id="characters" class="characters">            
+		<h1 class="character-header">Meet your Spider-Men!!</h1>
+
+			<div class="info">
+				<img class="miles-img img" src="img/miles-optimised.jpg" alt="">
+				<div class="miles-overlay overlay"></div>
+					<h2 class="miles-title">Miles Morales</h2>
+					<p class="miles-p">A Brooklyn teenager struggling to live up to the expectations of his family and teachers. After gaining superpowers from a radioactive spider, he finds himself embroiled in a plot by the city's supervillains to activate a dangerous dimensional portal, and is forced to take up the mantle of the late superhero Spider-Man.</p>
+				
+			</div>
+
+			<div class="info">
+				<img class="gs-img img" src="img/gwen-stacy-optimised.jpg" alt="">
+				<div class="gs-overlay overlay"></div>
+					<h2 class="gs-title">Gwen Stacy</h2>
+					<p class="gs-p">A teenage girl from another universe who was bitten by a radioactive spider. The daughter of a police captain, she is a successful superhero in her own right, but is nonetheless haunted by her failure to save the life of her best friend, Peter Parker.</p>
+				
+			</div>
+
+			<div class="info">
+				<img class="pbp-img img" src="img/peter-b-parker3.jpg" alt="">
+				<div class="pbp-overlay overlay"></div>
+					<h2 class="pbp-title">Peter B. Parker</h2>
+					<p class="pbp-p">An alternate universe Peter Parker, who becomes Miles' mentor upon entering his dimension. In stark contrast to the young, optimistic, and blond-haired Peter Parker that Miles originally met, this older, brown-haired version is an exhausted emotional wreck after screwing up his life in many ways.</p>
+				
+			</div>
+		
+		
+
+			<div class="info">
+				<img class="smn-img img" src="img/sm-noir-optimised.jpg" alt="">
+				<div class="smn-overlay overlay"></div>
+					<h2 class="smn-title">Spider-Man Noir</h2>
+					<p class="smn-p">An alternate Peter Parker who grew up in New York just before the outbreak of World War II. Rather than a bright-eyed student or fledgling photographer, he's a brooding private detective with a whole lotta moxie and no hang-ups about wielding a gun.</p>
+				
+			</div>
+		
+			<div class="info">
+				<img class="sh-img img" src="img/spider-ham-optimised.jpg" alt="">
+				<div class="sh-overlay overlay"></div>
+					<h2 class="sh-title">Spider-Ham</h2>
+					<p class="sh-p">An alternate Peter Parker originating from a Looney Tunes-esque World of Funny Animals. He was an average spider living a carefree life until he was bitten by a radioactive pig in a freak atomic hair-dryer incident. Now he spends his days as a photojournalist and his nights as a crimefighter.</p>
+				
+			</div>
+
+			<div class="info">
+				<img class="pp-img img" src="img/peni-parker.jpg" alt="">
+				<div class="pp-overlay overlay"></div>
+					<h2 class="pp-title">Peni Parker</h2>
+					<p class="pp-p">A young female Peter Parker alternate from the year 3145. Once an ordinary Japanese-American schoolgirl, she formed a psychic link with a radioactive spider that bit her, teaming up with it to pilot her late father's mighty fighting robot, SP//dr.</p>
+				
+			</div>
+
+		</div>
+	</div>
+
+	<!-- WHITE background div ENDS -->
+
+<footer class="footer">
+	<a href="https://www.marvel.com/" target="_blank">
+		<img class="marvel-logo" src="img/marvel-logo.png" alt="">
+	</a>
+	<a href="https://open.spotify.com/album/35s58BRTGAEWztPo9WqCIs" target="_blank">
+		<img class="spotify-logo" src="img/spotify-icon.png" alt="">
+	</a>
+	<h3 class="spotify-text">Listen to the Soundtrack!</h3>
+
+	<a href="https://www.instagram.com/marvel/?hl=en" target="_blank">
+		<img class="insta-logo" src="img/insta-logo-trans.png" alt="">
+	</a>
+	<a href="https://twitter.com/Marvel?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+		<img class="twitter-logo" src="img/twitter-logo.png" alt="">
+	</a>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<script class="character-hover">
+$(document).ready(function(){
+	
+$('.nav').mouseover(function(){
+				$('.animation').addClass('swing-animation');
+
+			});
+// Check if window or browser is of a certain width
+// In this case minimum ipad size - 1024px
+if ($(window).width() > 1024){
+
+		// MILES HOVER
+	$('.miles-img').mouseover(function(){
+	        $('.miles-overlay').show();
+	        $('.miles-title').show();
+	        $('.miles-p').show();
+
+	     });
+	$('.miles-img').mouseout(function()
+	     {
+	       $('.miles-overlay').hide();
+	       $('.miles-title').hide();
+	       $('.miles-p').hide();
+	     });
+		// GWEN STACY HOVER
+	$('.gs-img').mouseover(function(){
+	        $('.gs-overlay').show();
+	        $('.gs-title').show();
+	        $('.gs-p').show();
+
+	     });
+	$('.gs-img').mouseout(function()
+	     {
+	       $('.gs-overlay').hide();
+	       $('.gs-title').hide();
+	       $('.gs-p').hide();
+	     });
+
+	// PETER B. PARKER HOVER
+	$('.pbp-img').mouseover(function(){
+	        $('.pbp-overlay').show();
+	        $('.pbp-title').show();
+	        $('.pbp-p').show();
+
+	     });
+	$('.pbp-img').mouseout(function()
+	     {
+	       $('.pbp-overlay').hide();
+	       $('.pbp-title').hide();
+	       $('.pbp-p').hide();
+	     });
+
+		// SPIDER-HAM HOVER
+		$('.sh-img').mouseover(function(){
+	        $('.sh-overlay').show();
+	        $('.sh-title').show();
+	        $('.sh-p').show();
+
+	     });
+	$('.sh-img').mouseout(function()
+	     {
+	       $('.sh-overlay').hide();
+	       $('.sh-title').hide();
+	       $('.sh-p').hide();
+	     });
+		// SPIDER-MAN NOIR HOVER
+		$('.smn-img').mouseover(function(){
+	        $('.smn-overlay').show();
+	        $('.smn-title').show();
+	        $('.smn-p').show();
+
+	     });
+	$('.smn-img').mouseout(function()
+	     {
+	       $('.smn-overlay').hide();
+	       $('.smn-title').hide();
+	       $('.smn-p').hide();
+	     });
+
+	    // PENI PARKER HOVER
+	   	$('.pp-img').mouseover(function(){
+	        $('.pp-overlay').show();
+	        $('.pp-title').show();
+	        $('.pp-p').show();
+
+	     });
+	$('.pp-img').mouseout(function()
+	     {
+	       $('.pp-overlay').hide();
+	       $('.pp-title').hide();
+	       $('.pp-p').hide();
+	     });
+}
+// Screen Width Conditional ENDS
+
+
+});
+// Document Ready ENDS
+
+
+</script>
+</body>
+</html>
